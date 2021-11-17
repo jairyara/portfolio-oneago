@@ -1,0 +1,40 @@
+/**
+* Features
+**/
+
+.features {
+    margin-bottom: 75px;
+
+    .titles {
+        margin-bottom: 75px;
+    }
+
+    &__card {
+        margin-bottom: 50px;
+        padding: 0 16px;
+        @include flex(center, space-between, row);
+
+        &--picture {
+            margin-right: 16px;
+        }
+
+        &--content {
+            .subtitle {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .features {
+        margin-bottom: 100px;
+        &__container {
+            @include flex(center, space-between, row);
+        }
+
+        .titles {
+            margin-bottom: 100px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+/**
+* Portfolio
+**/
+
+.portfolio {
+    margin-bottom: 75px;
+    padding: 0 16px;
+
+    .titles {
+        margin-bottom: 75px;
+    }
+
+    &__card {
+        margin: 0 auto 60px;
+        width: 300px;
+        min-height: 350px;
+        background-color: $nimble;
+        border-radius: 5px;
+        border: none;
+        @include shadow;
+
+        &--img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &--content{
+            padding: 30px;
+
+            .subtitle {
+                margin-bottom: 30px;
+            }
+
+            button {
+
+                margin: 30px auto 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        margin-bottom: 100px;
+
+        .titles {
+            margin-bottom: 100px;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+    }
+}

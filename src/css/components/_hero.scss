@@ -1,0 +1,73 @@
+/**
+* Hero
+**/
+
+.hero {
+    width: 100%;
+    height: auto;
+    margin: 75px 0;
+    padding: 0 16px;
+
+    &__cta {
+        &--title {
+            font-size: $xx-lg;
+            text-align: center;
+            color: $black;
+        }
+
+        &--text {
+            margin: 50px 0;
+            font-size: $md;
+            color: $black;
+            text-align: center;
+        }
+
+        .btn-primary {
+            margin: 0 auto;
+            @include flex(center, center, row);
+        }
+    }
+
+    &__figure {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        margin: 100px 0;
+        min-height: 70vh;
+        background-image: url('/src/assets/hero-bg.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include flex(center, space-between, row);
+
+        &__cta {
+            &--title {
+                text-align: left;
+                font-size: $xxx-lg;
+            }
+
+            &--text {
+                text-align: left;
+                font-size: $x-lg;
+            }
+
+            .btn-primary {
+                display: block;
+                margin: 0;
+            }
+        }
+
+        &__figure {
+            display: block;
+            width: 500px;
+            height: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

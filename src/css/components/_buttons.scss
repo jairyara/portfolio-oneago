@@ -1,0 +1,20 @@
+/**
+* Buttons
+**/
+
+
+.btn {
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    @include flex(center, center, row);
+    font-weight: bold;
+    cursor: pointer;
+    
+    &-primary {
+        background-color: $primary;
+        color: $nimble;
+    }
+}
